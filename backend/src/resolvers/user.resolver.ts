@@ -6,6 +6,7 @@ import { Query as TQuery, Int } from 'type-graphql';
 import { Query, Mutation, Resolver, Args } from '@nestjs/graphql';
 import { User as CurrentUser } from '../decorators/user.decorators';
 
+//Rotas funcionais do usuário
 @Resolver(of => User)
 export class UserResolver {
     constructor(
